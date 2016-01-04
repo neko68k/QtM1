@@ -1,0 +1,22 @@
+#-------------------------------------------------
+#
+# Project created by QtCreator 2016-01-03T09:17:42
+#
+#-------------------------------------------------
+
+QT       -= core gui
+
+TARGET = libM1
+TEMPLATE = lib
+
+DEFINES += LIBM1_LIBRARY
+
+SOURCES += libm1.cpp
+
+HEADERS += libm1.h\
+        libm1_global.h
+
+unix {
+    target.path = /usr/lib
+    INSTALLS += target
+}
